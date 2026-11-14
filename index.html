@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yoshiの自己紹介</title>
+    <!-- CSSで見た目を整え、JavaScriptでボタンを動かします。 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card">
+      <p class="label">MY FIRST WEBSITE</p>
+
+      <!-- この中の画像と文章を、CSSのFlexboxで並べます。 -->
+      <div class="profile">
+        <img
+          class="profile-image"
+          src="profile.svg"
+          alt="人物を表したプロフィール用アイコン"
+          width="160"
+          height="160"
+        >
+        <div>
+          <h1>yoshi</h1>
+          <p>これは、私が作る最初のウェブサイトです。</p>
+          <p>hackathonで活躍できるようになりたい</p>
+        </div>
+      </div>
+
+      <!-- #contactは、このページ内の移動先です。 -->
+      <p><a href="https://developer.mozilla.org/ja/">ウェブ制作の資料を見る</a></p>
+      <p><a href="#contact">メッセージ練習へ移動</a></p>
+
+      <h2>これから学びたいこと</h2>
+      <ul>
+        <li>HTMLでページの内容を書く</li>
+        <li>CSSで色や余白を変える</li>
+        <li>JavaScriptで動きをつける</li>
+      </ul>
+      <button id="hello-button" type="button">押してみる</button>
+      <p id="message" aria-live="polite">まだボタンは押されていません。</p>
+
+      <section id="contact">
+        <h2>メッセージ練習</h2>
+        <p id="form-note">入力欄の練習です。送信・保存は行いません。</p>
+        <form aria-describedby="form-note">
+          <div class="form-field">
+            <label for="visitor-name">名前</label>
+            <input id="visitor-name" name="visitorName" type="text" autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="visitor-message">メッセージ</label>
+            <textarea id="visitor-message" name="visitorMessage" rows="4"></textarea>
+          </div>
+          <button type="reset">入力を消す</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
