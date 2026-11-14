@@ -1,0 +1,107 @@
+/* bodyはページ全体。波かっこの中に、見た目の指定を書きます。 */
+body {
+  font-family: sans-serif;
+  background-color: #fff4e6;
+  color: #243047;
+  margin: 0;
+  padding: 32px 16px;
+  line-height: 1.8;
+}
+
+/* .cardは、HTMLでclass="card"をつけた要素を選びます。 */
+.card {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.label {
+  color: #3659b8;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  color: #3659b8;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+button {
+  background-color: #3659b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #26418b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-image {
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 24px;
+}
+
+a {
+  color: #3659b8;
+
+}
+
+sectiom {
+  margin-top: 32px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8893a6;
+  border-radius: 8px;
+  font: inherit;
+}
+
+@media (max-width: 800px) {
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
